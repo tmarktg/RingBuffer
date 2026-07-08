@@ -63,9 +63,3 @@ Each step compiles and runs, same checkpoint style as SensorDeck.
 ## Build setup
 
 Keep the toolchain minimal so this doesn't become the second-toolchain burden Claude Code warned about: a single `CMakeLists.txt` pulling in Catch2, building the demo and the tests. On Windows this drops straight into Visual Studio (it opens CMake projects natively), so you stay in the same environment as SensorDeck — no separate tooling to learn.
-
-## Resume line it earns you
-
-_"Implemented a generic, RAII-managed circular buffer in modern C++ with move semantics and full unit-test coverage of wraparound and overwrite edge cases (Catch2)."_ — hits C++, OOP, memory management, and testing in one sentence.
-
-One caveat, same as before: this proves _competency_, not _depth_. It shows you can write correct, memory-aware C++ and reason about the tricky parts — which is the right bar for an SWE I application — but it won't stand in for years of C++ if the role turns out to be heavily embedded. Paired with SensorDeck, though, it closes the "blank on a required language" gap cleanly.
